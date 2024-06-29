@@ -62,8 +62,8 @@ tasks.withType(JavaCompile).configureEach {
 java {
 	withSourcesJar()
 
-	sourceCompatibility = JavaVersion.VERSION_17
-	targetCompatibility = JavaVersion.VERSION_17
+	sourceCompatibility = JavaVersion.VERSION_20
+	targetCompatibility = JavaVersion.VERSION_20
 }
 
 jar {
@@ -98,9 +98,9 @@ curseforge {
 			changelogType = "text"
 			changelog = file("changelog.txt")
 
-			addGameVersion "1.20"
-			addGameVersion "1.20.1"
-			addGameVersion "Java 17"
+			addGameVersion "1.21"
+			addGameVersion "1.21.1"
+			addGameVersion "Java 20"
 			addGameVersion "Fabric"
 
 			relations {
@@ -123,9 +123,9 @@ import com.modrinth.minotaur.dependencies.ModDependency
 modrinth {
 	token = project.hasProperty("modrinthApiKey") ? project.property("modrinthApiKey") : System.getenv("modrinthApiKey")
 	projectId = "2i7tg1Wv"
-	versionName = "v${project.mod_version} (Minecraft 1.20)"
+	versionName = "v${project.mod_version} (Minecraft 1.21)"
 	versionNumber = version
 	uploadFile = remapJar
-	gameVersions = ["1.20", "1.20.1"]
+	gameVersions = ["1.21", "1.21.1"]
 	loaders = ["fabric"]
 }
