@@ -1,10 +1,25 @@
 pluginManagement {
-	repositories {
-		maven {
-			name = 'Fabric'
-			url = 'https://maven.fabricmc.net/'
-		}
-		mavenCentral()
-		gradlePluginPortal()
-	}
+    repositories {
+        // Quilt repository
+        maven {
+            name = 'Quilt'
+            url = 'https://maven.quiltmc.org/repository/release/'
+        }
+        // Fabric repository
+        maven {
+            name = 'Fabric'
+            url = 'https://maven.fabricmc.net/'
+        }
+        // Maven Central repository
+        mavenCentral()
+        // Gradle Plugin Portal
+        gradlePluginPortal()
+    }
+    resolutionStrategy {
+        eachPlugin {
+            if (requested.id.id == "quilt.loom") {
+                useModule("org.quiltmc.loom:quilt-loom-gradle-plugin:0.12.+")
+            }
+        }
+    }
 }

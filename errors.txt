@@ -1,0 +1,25 @@
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file 'C:\Users\Matt\Desktop\GitHub\AutoRun\build.gradle' line: 6
+
+* What went wrong:
+Plugin [id: 'quilt.loom', version: '0.12.+', artifact: 'org.quiltmc.loom:quilt-loom-gradle-plugin:0.12.+'] was not found in any of the following sources:
+
+- Gradle Core Plugins (plugin is not in 'org.gradle' namespace)
+- Included Builds (No included builds contain this plugin)
+- Plugin Repositories (could not resolve plugin artifact 'org.quiltmc.loom:quilt-loom-gradle-plugin:0.12.+')
+  Searched in the following repositories:
+    Quilt(https://maven.quiltmc.org/repository/release/)
+    Fabric(https://maven.fabricmc.net/)
+    MavenRepo
+    Gradle Central Plugin Repository
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 2s
