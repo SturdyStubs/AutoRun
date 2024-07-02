@@ -2,6 +2,8 @@ package com.emonadeo.autorun.mixin.client;
 
 import com.emonadeo.autorun.AutoRunMod;
 import com.emonadeo.autorun.MovementDirection;
+import org.quiltmc.loader.api.ModContainer;
+import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.input.KeyboardInput;
